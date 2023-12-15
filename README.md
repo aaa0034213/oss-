@@ -226,6 +226,24 @@
       $git clean    Untracked 파일 삭제 >> 바로 삭제 x <br>
       >> $git clean-i  삭제하고 싶은 파일 삭제 가능 //  $git clean-f  무조건 삭제하는 기능.<br>
 
+
+---
+## 8주차 oss
+>8주차 oss<br>
+
+  1.**브랜치 병합 개요**<br>
+
+  (1) 병합(merge): 두 개 브랜치를 하나로 모으는 과정<br>
+  > fast-forward, 3-way 병합 <br>
+
+    fast-forward 조건: 현재 브랜치 master 가 병합 대상 커밋의 직접 뿌리인 경우<br>
+    master 단순히 이동 작업공간, 스테이징 영역 이동<br>
+    병합할 브랜치 조상 기준 브랜치인 경우 (일렬 상태) fast forward 사용<br>
+    >> $git merge bugfix<br>
+
+    3-way 조건: 두 브랜치 조상이 같은 경우 가능<br>
+    새로운 커밋을 사용하여 두 기록을 합침<br>
+    >> $git merge bugfix<br>
   
 
     
