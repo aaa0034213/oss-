@@ -52,9 +52,10 @@
 
 2. **vscode 리눅스 명령**<br>
 > 중요한 것<br>
+  touch fname 빈 파일 fname 생성<br>
   cat(Concatenate) 파일 내용 화면 출력<br>
   Redirection 명령어 ( >, >>) 화면의 출력 결과를 파일로 저장<br>
-> $rm -rf.git 전체 폴더를 삭제& 하부 폴더 git 삭제
+   $rm -rf.git 전체 폴더를 삭제& 하부 폴더 git 삭제<br>
 
    
 
