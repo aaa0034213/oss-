@@ -94,7 +94,7 @@
     >작업 드렉토리  스테이징 영역  깃 저장소
      작<스 ($git diff) / 스<깃 ($git --staged HEAD) / 작<깃 ($git diff HEAD)
 
-    커밋 간의 파일 비교시<br>
+    커밋 간의 파일 비교시
     $git diff [비교파일1][비교파일2]
     $git diff 000abc 111dfg<br>
 
@@ -109,9 +109,9 @@
   3. **파일 복원 restore**<br>
 
       파일 복원
-     > $git restore [file]  작업 디렉토리 파일 스테이징 영역 파일로 복구
-       $git restore --staged [file] 깃 저장소 최신 커밋 상태 스테이징 영역 복구
-       $git restore --source=HEAD--staged--worktree f 현재 내용으로 작업,스테이징 영역 모드 같은 상태 복구
+     > $git restore [file]  작업 디렉토리 파일 스테이징 영역 파일로 복구<br>
+       $git restore --staged [file] 깃 저장소 최신 커밋 상태 스테이징 영역 복구<br>
+       $git restore --source=HEAD--staged--worktree f 현재 내용으로 작업,스테이징 영역 모드 같은 상태 복구<br>
 ---
 
 ##5주차 oss
@@ -119,18 +119,30 @@
 
   1. **버전과 태그**<br>
 
-    버전(version): 프로그램 수정,코드를 구분 식별자 (숫자 사용, 년월 사용)<br>
-    -major,minor,patch (메이저 번호, 마이너 번호, 패치 반호)<br>
+  +버전(version): 프로그램 수정,코드를 구분 식별자 (숫자 사용, 년월 사용)<br>
+    -major,minor,patch (메이저 번호, 마이너 번호, 패치 반호)
 
-    태그(tag): 특정 커밋 버전 번호나 다른 이름 부여하는 기능<br>
-    - 주석 태그, 일반 태그 use<br>
+  + 태그(tag): 특정 커밋 버전 번호나 다른 이름 부여하는 기능
+    주석 태그, 일반 태그 use<br>
 
-    >주석태그: 주석이 있는 태그, 태그 버전 이름 중복 x
+    > 주석태그: 주석이 있는 태그, 태그 버전 이름 중복 x
 
-    
-    $git tag- a v1.0.0 -m '메세지 정보' / 이메일, 날짜, 메세지 등 정보를 포함함
-    $git tag -a v.1.0.0 / 기본 설정된 편집기 실행 
-    ...
+    $git tag : 예전 태그부터 표시<br>
+    $git log : 최신 커밋부터 표시<br>
+    $git tag- a v1.0.0 -m '메세지 정보' / 이메일, 날짜, 메세지 등 정보를 포함함<br>
+    $git tag -a v.1.0.0 / 기본 설정된 편집기 실행 <br>
+    $git tag -d (태그 삭제)<br>
+
+
+  2. **브랜치 개요 관리**<br>
+
+  + 브랜치 (branch) 버전을 다양하게 작업 할 수 있게 하는 기능 / 커밋 사이를 가볍게 이동하는 포인터<br>
+    -HEAD: 작업중인 브랜치 최신 커밋 가르키는 포인터 (checkout, switch ) 가능<br>
+
+    > 브랜치 생성<br>
+
+      $git branch bname  단순히 생성, HEAD 이동 x
+      $git branch -c bname or checkout -b name  생성 후 새 브랜치 HEAD 이동 o
 
     
 
