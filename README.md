@@ -202,10 +202,30 @@
 
 2. **Stash**<br>
 
-(1) stash 필요성: 브랜치 이동 or 이전 커밋 이동하기 위해<br>
+ stash 필요성: 브랜치 이동 or 이전 커밋 이동하기 위해<br>
 
-> $git stash  작업 드렉토리 스테이징 영역 stash 저장 작업 폴더 정리<br>
-  옵션: --keep-index 스테이징 영역 제외 작업 폴더만 저장<br> // --include-untracked  untracked 포함해 저장<br>
+>(1) $git stash  작업 디렉토리 스테이징 영역 stash 저장 작업 폴더 정리<br>
+  옵션: --keep-index 스테이징 영역 제외 작업 폴더만 저장 // --include-untracked  untracked 포함해 저장<br>
+
+  (2) $git stash apply  작업 디렉토리 내용만 복사해 활용<br>
+  $git stash apply --index  스테이지 영억도 함께 복사<br>
+
+  (3) Stash 목록보기<br>
+    $git stash list <br>
+
+    
+  (4)특정 stash 확인<br>
+    $git stash show<br>
+
+3. **pop & drop**<br>
+
+    > $git stash pop / pop stash@{n}  최근 지정된 임시저장소 내용 가져와 반영하고 삭제<br>
+      $git stash drop  최근 임시저장 내용 삭제<br>
+      $git stash drop stash@{n}  지정된 임시저장 삭제<br>
+      $git stash clear  모든 stash 목록 제거<br>
+      $git clean    Untracked 파일 삭제 >> 바로 삭제 x <br>
+      >> $git clean-i  삭제하고 싶은 파일 삭제 가능 //  $git clean-f  무조건 삭제하는 기능.<br>
+
   
 
     
