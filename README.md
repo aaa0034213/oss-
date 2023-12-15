@@ -67,7 +67,42 @@
     commit 명령: 스테이징 영역 >> 깃 저장소<br>
 
   2. **버전 로그 이력**<br>
+
+  > $git log 로그 이력 정보 표시<br>
+    $git log --oneline 로그 이력 한 줄 표시<br>
+    $git log -p 로그 이력&파일 변화 표시<br>
+    $git show 마지막 커밋(HEAD) 커밋 정보 표시<br>
+
+  3. **로그 이력 과거 여행**<br>
+
+  >  과거 커밋 HEAD~ 이동 (check)<br>
+      $git checkout HEAD~  HEAD 이전 커밋 이동<br>
+      $git chechkout-    이전 checkout 이동<br>
+      $git checkout main  브랜치 마지막 커밋 이동<br>
+
+  > 과거 커밋 이동 (switch)<br>
+      $git switch -d 이전커밋<br>
+      $git switch [branch]<br>
+      $git swithch -c [newbranch]  새로운 브랜치 생성후 이동<br>
+---
+
+## 4주차 oss
+>4주차 oss<br>
+
+  1. **파일 비교 diff**<br>
+
+      작업 드렉토리  스테이징 영역  깃 저장소<br>
+    >  작<스 ($git diff) / 스<깃 ($git --staged HEAD) / 작<깃 ($git diff HEAD)<br>
+
+    커밋 간의 파일 비교시<br>
+    $git diff [비교파일1][비교파일2]
+    >> (ex) $git diff 000abc 111dfg
+    
+    
   
+
+      
+    
 
 
 
