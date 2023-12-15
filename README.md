@@ -91,12 +91,12 @@
 
   1. **파일 비교 diff**<br>
 
-    >  작업 드렉토리  스테이징 영역  깃 저장소<br>
+    >작업 드렉토리  스테이징 영역  깃 저장소<br>
      작<스 ($git diff) / 스<깃 ($git --staged HEAD) / 작<깃 ($git diff HEAD)<br>
 
     커밋 간의 파일 비교시<br>
     $git diff [비교파일1][비교파일2]
-     (ex) $git diff 000abc 111dfg
+    $git diff 000abc 111dfg
     
     
   
