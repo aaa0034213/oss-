@@ -96,7 +96,7 @@
 
     커밋 간의 파일 비교시<br>
     $git diff [비교파일1][비교파일2]
-    >> (ex) $git diff 000abc 111dfg
+     (ex) $git diff 000abc 111dfg
     
     
   
