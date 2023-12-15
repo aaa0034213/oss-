@@ -102,16 +102,16 @@
   2. **파일 삭제 rm**<br>
 
     리녹스 명령 파일삭제
-    > $rm [file]  작업 디렉토리에서 file 삭제.<br>
-      $git rm [file]  작업 디렉토리, 스테이징 영역 file 모두 삭제<br>
-      $git rm -catched [file]  스테이징 영역 file 삭제<br>
+    > $rm [file]  작업 디렉토리에서 file 삭제.
+      $git rm [file]  작업 디렉토리, 스테이징 영역 file 모두 삭제
+      $git rm -catched [file]  스테이징 영역 file 삭제
 
   3. **파일 복원 restore**<br>
 
       파일 복원
-     > $git restore [file]  작업 디렉토리 파일 스테이징 영역 파일로 복구<br>
-       $git restore --staged [file] 깃 저장소 최신 커밋 상태 스테이징 영역 복구<br>
-       $git restore --source=HEAD--staged--worktree f 현재 내용으로 작업,스테이징 영역 모드 같은 상태 복구<br>
+     > $git restore [file]  작업 디렉토리 파일 스테이징 영역 파일로 복구
+       $git restore --staged [file] 깃 저장소 최신 커밋 상태 스테이징 영역 복구
+       $git restore --source=HEAD--staged--worktree f 현재 내용으로 작업,스테이징 영역 모드 같은 상태 복구
 ---
 
 ##5주차 oss
@@ -125,10 +125,10 @@
     태그(tag): 특정 커밋 버전 번호나 다른 이름 부여하는 기능<br>
     - 주석 태그, 일반 태그 use<br>
 
-    >주석태그: 주석이 있는 태그, 태그 버전 이름 중복 x<br>
+    >주석태그: 주석이 있는 태그, 태그 버전 이름 중복 x
 
     
-    $git tag- a v1.0.0 -m '메세지 정보' / 이메일, 날짜, 메세지 등 정보를 포함함<br>
+    $git tag- a v1.0.0 -m '메세지 정보' / 이메일, 날짜, 메세지 등 정보를 포함함
     $git tag -a v.1.0.0 / 기본 설정된 편집기 실행 
     ...
 
