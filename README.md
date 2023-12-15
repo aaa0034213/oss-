@@ -243,9 +243,23 @@
 
     3-way 조건: 두 브랜치 조상이 같은 경우 가능<br>
     새로운 커밋을 사용하여 두 기록을 합침<br>
-    >> $git merge bugfix<br>
+    >> $git merge  bugfix<br>
   
+  (2) 두 브랜치 일렬 상태 2가지 병합<br>
+      옵션 x = (fast-forward merge) $git merge topic // 옵션 --no--ff = (3-way merge) $git merge --no--ff topic<br>
 
+  (3) 병합 다양한 옵션<br>
+      $git merge --ff-only {병합할 브랜치 명}  상태 fast 인 일렬 상태에서만 병합 o<br>
+      $git merge --squash {병합할 브랜치 명}  현재 브랜치에 병합 대상과 합치는 커밋 하나 생성후 병합<br>
+
+    * squash : 강압적 병합<br>
+
+2.**병합 충돌과 해결**<br>
+
+(1) 파일 충돌 발생시 : 병합한 두 브랜치 마지막 커밋 비교 // 두 브랜치 모두 변경 사항 달리 발생한 파일 수정.<br>
+
+
+      
     
        
       
