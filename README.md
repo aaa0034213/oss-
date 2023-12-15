@@ -236,21 +236,21 @@
   (1) 병합(merge): 두 개 브랜치를 하나로 모으는 과정<br>
   > fast-forward, 3-way 병합 <br>
 
-    fast-forward 조건: 현재 브랜치 master 가 병합 대상 커밋의 직접 뿌리인 경우<br>
-    master 단순히 이동 작업공간, 스테이징 영역 이동<br>
-    병합할 브랜치 조상 기준 브랜치인 경우 (일렬 상태) fast forward 사용<br>
-    >> $git merge bugfix<br>
+    fast-forward 조건: 현재 브랜치 master 가 병합 대상 커밋의 직접 뿌리인 경우
+    master 단순히 이동 작업공간, 스테이징 영역 이동
+    병합할 브랜치 조상 기준 브랜치인 경우 (일렬 상태) fast forward 사용
+    >> $git merge bugfix
 
-    3-way 조건: 두 브랜치 조상이 같은 경우 가능<br>
-    새로운 커밋을 사용하여 두 기록을 합침<br>
-    >> $git merge  bugfix<br>
+    3-way 조건: 두 브랜치 조상이 같은 경우 가능
+    새로운 커밋을 사용하여 두 기록을 합침
+    >> $git merge  bugfix
   
-  (2) 두 브랜치 일렬 상태 2가지 병합<br>
-      옵션 x = (fast-forward merge) $git merge topic // 옵션 --no--ff = (3-way merge) $git merge --no--ff topic<br>
+  (2) 두 브랜치 일렬 상태 2가지 병합
+      옵션 x = (fast-forward merge) $git merge topic // 옵션 --no--ff = (3-way merge) $git merge --no--ff topic
 
   (3) 병합 다양한 옵션<br>
-      $git merge --ff-only {병합할 브랜치 명}  상태 fast 인 일렬 상태에서만 병합 o<br>
-      $git merge --squash {병합할 브랜치 명}  현재 브랜치에 병합 대상과 합치는 커밋 하나 생성후 병합<br>
+      $git merge --ff-only {병합할 브랜치 명}  상태 fast 인 일렬 상태에서만 병합 o
+      $git merge --squash {병합할 브랜치 명}  현재 브랜치에 병합 대상과 합치는 커밋 하나 생성후 병합
 
     * squash : 강압적 병합<br>
 
