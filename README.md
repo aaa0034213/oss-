@@ -256,7 +256,35 @@
 
 2.**병합 충돌과 해결**<br>
 
-(1) 파일 충돌 발생시 : 병합한 두 브랜치 마지막 커밋 비교 // 두 브랜치 모두 변경 사항 달리 발생한 파일 수정.<br>
+>(1) 파일 충돌 발생시 : 병합한 두 브랜치 마지막 커밋 비교 // 두 브랜치 모두 변경 사항 달리 발생한 파일 수정.<br>
+ (2) 충돌 파일 vscode 확인: **<<<<<<<** 색상<br>
+ (3) 충돌 해결 방법: 1. 병합 취소: $git merge --abort // 다시 병합 $git merge feat/list<br>
+ 이후 추가,커밋 다시 >> $git commit -am 'Resolve confilct,main'<br>
+
+ ---
+
+ ## 9주차 oss
+ >9주차 oss<br>
+
+1.**rebase**<br>
+
+  >(1)rebase  선형으로 단순하고 깨끗한 이력 사용, 원래 커밋 이력 변경 (정확한 커밋 이력시 사용 x)<br>
+  *두 갈래 브랜치에서 기존의 베이스를 수정 >> 병합할 브랜치 마지막 커밋 새로운 베이스로 수정 병합<br>
+
+  (2)일반적 rebase 방법: topic 에서 main rebase 이후 다시 main 이동 fast-forward 병합수행<br>
+    $git checkout topic >> $git rebase main >> $git checkout main >> $git merge topic<br>
+
+  (3)다른 rebase 방법: main topic 순서로 재배치 방법<br>
+    $git rebase main topic >>  $git checkout main >> $git merge topic<br>
+    
+2.**커밋 이력 수정**<br>
+
+
+  >(1) 최근 커밋 내용 수정: $git commit --amend' // 기본 편집기로 메세지 입력<br>
+    $git commit --amend -m 'new message'// 기본 편집기 메시지 입력<br>
+    $git commmit --amend --noedit  // 수정 x  다시 커밋 수정<br>
+      
+    
 
 
       
