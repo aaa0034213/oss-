@@ -313,6 +313,24 @@
   $git reset --hard ORIG_HEAD<br>
     
 
+2.**revert**<br>
+
+  >(1) revert  지정한 특정 커밋을 취소해 바로 이전 상태로 되돌리는 방법 // 커밋 x 작업 영익이 깨끗해야 수행 o<br>
+  충돌/해결  바로 이전 취소 여러번 계속해 충돌 x<br>
+
+  
+  >(2) 오류 발생 revert : 작업 영역 깨끗하지 않을 때 // 커밋하고 다시 revert (수정 내용 사라짐) 아니면 git reset --hard HEAD~ (수정한 내용, 현재 커밋 로그 사라짐)<br>
+
+  >(3) 사용 방법  $git revert HEAD or $git revert HEAD --no-edit<br>
+  
+
+
+
+      
+
+
+
+  
 
       
     
