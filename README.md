@@ -91,15 +91,22 @@
 
   1. **파일 비교 diff**<br>
 
-    >작업 드렉토리  스테이징 영역  깃 저장소<br>
-     작<스 ($git diff) / 스<깃 ($git --staged HEAD) / 작<깃 ($git diff HEAD)<br>
+    >작업 드렉토리  스테이징 영역  깃 저장소
+     작<스 ($git diff) / 스<깃 ($git --staged HEAD) / 작<깃 ($git diff HEAD)
 
     커밋 간의 파일 비교시<br>
     $git diff [비교파일1][비교파일2]
-    $git diff 000abc 111dfg
+    $git diff 000abc 111dfg<br>
+
     
+    2. **파일 삭제 rm**<br>
+
+    리녹스 명령 파일삭제
+    > $rm [file]  작업 디렉토리에서 file 삭제.<br>
+      $git rm [file]  작업 디렉토리, 스테이징 영역 file 모두 삭제<br>
+      $git rm -catched [file]  스테이징 영역 file 삭제<br>
+      
     
-  
 
       
     
