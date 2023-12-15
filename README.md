@@ -283,7 +283,34 @@
   >(1) 최근 커밋 내용 수정: $git commit --amend' // 기본 편집기로 메세지 입력<br>
     $git commit --amend -m 'new message'// 기본 편집기 메시지 입력<br>
     $git commmit --amend --noedit  // 수정 x  다시 커밋 수정<br>
-      
+
+
+    (2) 이전 커밋 HEAD~2, HEAD~, HEAD 각각의 커밋 수정<br>
+    $git rebase --interactive HEAD~3<br>
+
+    (3) rebase-i 명령어 : pick 해당 커밋 수정 x 그대로 use, reword 개별 커밋 메세지 다시 작성, squash 계속된 이후 커밋을 이전 커밋에 결합, drop 커밋 자체 삭제<br>
+
+    
+---
+
+## 10주차 oss
+>10주차 oss<br>
+
+  1.**reset**<br>
+
+  reset  커밋 이력에 이전 특정 커밋으로 완전히 되돌아가는 방법<br>
+  (1) reset 옵션: --hard, --mixed, --soft // 무조건 깃 저장소에는 복사됨
+
+  > 옵션 hard  (HEAD~)  지정된(HEAD~) 내용으로 작업 폴더 스테이징 영역, 깃 저장소 모두 복사 수정, reset 전 작업 폴더, 스테이지 영역 작업 내용 모두 사라짐.<br>
+
+  mixed  (HEAD~2)  지정된(HEAD~) 내용으로 스테이지 영역과 깃 저장소에 모두 복사 수정, reset 전 커밋 메세지 로그이력과 스테이지 영역, 깃 저장소 내용 모두 사라짐. //  작업 폴더 내용 이전 그대로<br>
+
+  soft  (HEAD~) 지정된(HEAD~)  내용으로 깃 저장소에만 복사 수정, 커밋 메세지 로그 이력 사라짐. // 작업 폴더, 스테이지 영역 내용 모두 이전 그대로 남음<br>
+
+  hard  >> 파일 수정 , add , commit 필요 , mixed >>  add , commit 필요 , soft >>  commit 필요<br>
+
+  (2) reset 이후 다시 바로 이전 상태로 되돌아가기<br>
+  $git reset --hard ORIG_HEAD<br>
     
 
 
