@@ -125,9 +125,8 @@
   + 태그(tag): 특정 커밋 버전 번호나 다른 이름 부여하는 기능
     주석 태그, 일반 태그 use<br>
 
-    > 주석태그: 주석이 있는 태그, 태그 버전 이름 중복 x
-
-    $git tag : 예전 태그부터 표시<br>
+    주석태그: 주석이 있는 태그, 태그 버전 이름 중복 x<br>
+    >$git tag : 예전 태그부터 표시<br>
     $git log : 최신 커밋부터 표시<br>
     $git tag- a v1.0.0 -m '메세지 정보' / 이메일, 날짜, 메세지 등 정보를 포함함<br>
     $git tag -a v.1.0.0 / 기본 설정된 편집기 실행 <br>
@@ -139,12 +138,50 @@
   + 브랜치 (branch) 버전을 다양하게 작업 할 수 있게 하는 기능 / 커밋 사이를 가볍게 이동하는 포인터<br>
     -HEAD: 작업중인 브랜치 최신 커밋 가르키는 포인터 (checkout, switch ) 가능<br>
 
-    > 브랜치 생성<br>
+     브랜치 생성<br>
+      >$git branch bname  단순히 생성, HEAD 이동 x<br>
+      $git switch -c bname or checkout -b name  //생성 후 새 브랜치 HEAD 이동 o<br>
+      $git switch [bame] / checkout [bname]  // HEAD 지정한 브랜치로 이동<br>
+      $git switch - / checkout -  // 이전 브랜치로 이동<br>
+      $git branch -d branch -name   // 저장소 삭제<br>
 
-      $git branch bname  단순히 생성, HEAD 이동 x
-      $git branch -c bname or checkout -b name  생성 후 새 브랜치 HEAD 이동 o
 
-    
+    ---
+
+  ## 6주차 oss
+  > 6주차 oss<br>
+
+  1.**원격 저장소 복제**<br>
+
+    +원격 저장소 생성 >> 복제 (Clone)
+
+  > $git clone [복사주소]    원격저장소 동일한 이름 복제<br>
+    $git clone [복사주소][새로운 폴더]    하루 폴더 새로운 폴더 명으로 복제<br>
+    $git remote   원격 저장소 이름 목록만<br>
+    $git remote -v 원격 저정서 주소 이름 목록<br>
+
+   2. **유명 OSS**<br>
+
+   +유명 OSS
+
+  1. vscode 2. atom 3. VCS 깃 4. 구글 인공지능라이브
+
+  3. **지역과 원격 저장소 연동 Push Pull**<br>
+
+  > Push : 지역 저장소에서 원격 저장소로<br>
+    Pull : 원격 저장소에서 수정 후 지역 저장소로<br>
+
+    $git pull = git fetch + git merge 
+    (1) fetch : 원격 저장소에서 로컬 저장소로 소스 가져와 병합 미수행 명령
+    명령어: $git fetch <remote>
+    (2) merge : 깃 허브 내용 반영하려면 필요한 과정 (병합)
+
+    $git push : 지역 저장소 수정 사항을 push 로 원격 저장소로 보내는 명령
+
+---
+## 
+
+  
 
     
        
