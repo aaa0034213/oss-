@@ -33,7 +33,29 @@
   > 깃: 컴퓨터 파일의 추적하는데 사용되는 버전 관리 시스템<br>
     깃 내부: 작업 디렉토리, 작업공간, 스테이징 영역, 깃 저장소, 임시 저장소<br>
     add 명령: 작업공간 >> 스테이징 역역
-    commit 명령: 스테이징 영역 >> 깃 저장소
+    commit 명령: 스테이징 영역 >> 깃 저장소<br>
+
+---
+## 2주차 정리
+>2주차 oss<br>
+1. **깃 설정 & 저장소 생성**<br>
+
+
+   $git config -- 설정범위 설정변수<br>
+   --system, --global, --local<br>
+
+   core.editor['code--wait] #기본 편집기 설정<br>
+   --global --edit #전역 설정 파일 편집<br>
+   core.autocrlf true # 줄바꿈 자동전환 <br>
+   core.selfcrlf false # 줄바꿈 안전설정<br>
+   $git init # 저장소 생성<br>
+
+2. **vscode 리눅스 명령**<br>
+> 중요한 것<br>
+  cat(Concatenate) 파일 내용 화면 출력<br>
+  Redirection 명령어 ( >, >>) 화면의 출력 결과를 파일로 저장
+
+   
 
 
 
